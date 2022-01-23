@@ -23,7 +23,6 @@
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-    height: 35rem;
     width: 100%;
     display: block;
     margin-left: 0;
@@ -34,13 +33,14 @@
     animation-name: slideInFromAbove;
     animation-duration: 3s;
     animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
 }
 
 .img_desc{
    position: absolute;
    top: 5%;
    left: 5%;
-   width: 30%;
+   width: 38%;
    padding: 1% 1% 1% 1%;
    background-color: rgba(240, 255, 255, 0.356);
    animation-name: slideInFromLeft;
@@ -83,6 +83,9 @@ body{
     .img_desc p{
         font-size: 10pt;
     }
+    .img_desc{
+        width: 80%;
+    }
 }
 
 @media (max-width: 1200px) and (min-width:600px) { 
@@ -92,6 +95,9 @@ body{
     }
     .img_desc p{
         font-size: 12pt;
+    }
+    .img_desc{
+        width: 50%;
     }
 }
 
